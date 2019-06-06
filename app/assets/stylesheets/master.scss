@@ -1,0 +1,38 @@
+@import "bootstrap";
+
+
+body {
+  background: image_url('greyzz_@2X.png');
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #778C88;
+  box-shadow: 0px 1px 3px #2a2a2a; 
+}
+
+.navbar-light .navbar-brand {
+    color: #0D0D0D;
+    font-family: 'trashhandregular', sans-serif;
+    font-size: 26px;
+    
+  }
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 21px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}

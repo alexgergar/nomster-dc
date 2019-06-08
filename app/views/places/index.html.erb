@@ -3,8 +3,13 @@
       <h1><%= place.name %></h1>
       <i><%= place.address %></i><br /><br />
       <p><%= place.description %></p><br />
+
+      <% if place.user.present? %>
+        <small><%=place.user.email %></small>
+      <% end %>
   </div>
 <% end %>
+
 
 
   <div class="pagy-style col-4 offset-4">

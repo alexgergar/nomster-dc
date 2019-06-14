@@ -39,4 +39,15 @@
       <%= link_to 'Remove Location', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this location'}, class: 'btn btn-danger' %>
     <% end %>
   </div>
+  <div class="clear"></div>
+  <%= simple_form_for @comment, url: '#' do |f| %>
+    <%= f.input :message %>
+    <%= f.input :rating %>
+    <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+  <% end %>
 </div>
+
+
+
+
+

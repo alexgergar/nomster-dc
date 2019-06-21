@@ -42,13 +42,7 @@
 
 <!-- Photo Section-->
 
-
-<!-- Button for photo modal -->
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-    Add a Photo
-  </button>
-
-  <!-- Modal -->
+ <!-- Picture Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -72,14 +66,26 @@
     </div>
   </div>
 
+<!-- Title and Button for photo modal -->
+<button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#myModal">
+    Add a Photo
+  </button>
+<h1 class="float-left">Pictures</h1>
+
+<div class="clear"></div>
+ 
+
 <!-- list of photos and captins-->
-<% @place.photos.each do |photo| %>
-  <div>
-      <%= image_tag photo.picture.url if photo.picture.present? %>
-      <%= photo.caption %>
-      <small><%= photo.user.email %></small>
-  </div>
-<% end %>
+
+<div class="row">
+  <% @place.photos.each do |photo| %>
+    <div>
+        <%= image_tag photo.picture.url.to_s %>
+        <%= photo.caption %>
+        <small><%= photo.user.email %></small>
+    </div>
+  <% end %>
+</div>
 
 <!-- Comment Section -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

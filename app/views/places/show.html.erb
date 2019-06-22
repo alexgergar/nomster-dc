@@ -31,9 +31,8 @@
 <% end %>
 <br />
 <!-- Edit/Remove -->
-    <div class="text-right">
-        <button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#photoModal">Add a Photo
-        </button>
+      <div class="text-right">  
+        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#photoModal">Add a Photo</button>
         <% if current_user && current_user == @place.user %>
         <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
         <%= link_to 'Remove Location', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this location'}, class: 'btn btn-danger' %>

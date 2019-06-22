@@ -43,7 +43,7 @@
 <!-- Photo Section-->
 
  <!-- Picture Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -56,7 +56,7 @@
           <div class="modal-body">
               <%= f.input :picture %>
               <%= f.input :caption %>
-          </div>
+              </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
@@ -67,28 +67,34 @@
   </div>
 
 <!-- Title and Button for photo modal -->
-<button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#myModal">
+<button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#photoModal">
     Add a Photo
   </button>
 <h1 class="float-left">Pictures</h1>
-
 <div class="clear"></div>
  
 
 <!-- list of photos and captins-->
+<br/>
 
-<div class="row">
-  <% @place.photos.each do |photo| %>
-    <div>
-        <%= image_tag photo.picture.url.to_s %>
-        <%= photo.caption %>
-        <small><%= photo.user.email %></small>
-    </div>
-  <% end %>
+<% @place.photos.each do |photo| %>
+
+<%# puts photo.picture.url #%>
+<div class="row justify-content-center">
+      <%= image_tag photo.picture.url.to_s %>
+</div><br/>
+<div class="row justify-content-center">
+      <%= photo.caption %><br/>
 </div>
+<div class="row justify-content-center">
+      <small><%= photo.user.email %></small>
+</div>
+<% end %>
+<br/>
 
 <!-- Comment Section -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Model section - how to add comment -->
+<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -111,13 +117,12 @@
   </div>
 </div>
 
-<div class="col-10 offset-1">
-  <h1 class="float-left">Comments</h1>
+<!-- Title and button for comment -->
+<h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#myModal">
+  <button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#commentModal">
     Add a comment
 </button>
-</div>
 
 <div class="clear"></div>
 

@@ -8,25 +8,37 @@
         <small><%=place.user.email %></small>
       <% end %>
 
-    <!-- Comment Section for each place-->  
-    <% if place.comments.present? %>
-      <div class="col-12">
-        <blockquote>
-          <% if place.comments.last.humanized_rating.present? %>
-            <b><%= place.comments.last.humanized_rating %></b> -
-          <% end %>
+<!-- Comment Section place-->  
+      <% if place.comments.present? %>
+        <div class="col-12">
+          <blockquote>
+            <% if place.comments.last.humanized_rating.present? %>
+              <b><%= place.comments.last.humanized_rating %></b> -
+            <% end %>
             <%= place.comments.last.message %>
             <small><%= place.comments.last.user.email %></small>
-        </blockquote>
+          </blockquote>
+        </div>
+      <% end %>
+
+<!------ Photo of place ----->      
+
+      <div class="row justify-content-center">
+        <% if place.photos.present? %>
+          <%= image_tag place.photos.last.picture.url.to_s %>
+        </div>
+      <div class="row justify-content-center">
+        <%= place.photos.last.caption %>
       </div>
-    <% end %>
-      
+      <div class="row justify-content-center">
+          <small><%= place.photos.last.user.email %></small>
+        <% end %>
+      </div> 
   </div>
 <% end %>
 
+<!-- Pagination -->
 
-
-<!-- Button trigger modal -->
 <div class="pagy-style col-4 offset-4">
   <%== pagy_bootstrap_nav(@pagy) %>
   <%== pagy_bootstrap_nav_js(@pagy) %>

@@ -59,4 +59,8 @@ class PlacesController < ApplicationController
     params.require(:place).permit(:name, :description, :address)
   end
 
+  def average_rating
+    @place.comments.sum/@place.comments.length
+  end
+
 end

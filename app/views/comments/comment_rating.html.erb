@@ -1,147 +1,9 @@
-<div class="booyah-box col-10 offset-1">
-  <h1><%= @place.name %></h1>
-  <i><%= @place.address %></i>
-  <br/><br/>
-  <p><%= @place.description %></p>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<!-- Map Function -->
-  <% if @place.latitude.present? && @place.longitude.present? %>
-    <script>
-
-      function initMap() {
-        var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Hello World!'
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABtClcCssJptUprlpkaG44X-BwENKR_a0&callback=initMap">
-    </script>
-
-     <div id="map"></div>
-<% end %>
-<br />
-<!-- Edit/Remove -->
-      <div class="text-right">  
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#photoModal">Add a Photo</button>
-        <% if current_user && current_user == @place.user %>
-        <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
-        <%= link_to 'Remove Location', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this location'}, class: 'btn btn-danger' %>
-      <% end %>
-    </div>
-<br />
-
-
-<!-- Photo Section-->
-
- <!-- Picture Modal -->
-  <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Add a Photo</h4>
-        </div>
-        
-        <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-          <div class="modal-body">
-              <%= f.input :picture %>
-              <%= f.input :caption %>
-              </div>
-              
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
-
-<!-- Title and Button for photo modal -->
-<h1 class="float-left">Pictures</h1>
-<div class="clear"></div>
- 
-
-<!-- list of photos and captins-->
-<br/>
-
-<% @place.photos.each do |photo| %>
-<div class="row justify-content-center">
-      <%= image_tag photo.picture.url.to_s %>
-</div><br/>
-<div class="row justify-content-center">
-      <%= photo.caption %><br/>
-</div>
-<div class="row justify-content-center">
-      <small><%= photo.user.email %></small>
-</div>
-<% end %>
-<br/>
-
-<!-- Comment Section -->
-<!-- Model section - how to add comment -->
-<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Add a comment</h4>
-      </div>
-      <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
-          <div class="modal-body">
-              <%= f.input :message %>
-              <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
-          </div>
-      <% end %>
-    </div>
-  </div>
-</div>
-
-<!-- Title and button for comment -->
-<h1 class="float-left">Comments</h1>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#commentModal">
-    Add a comment
-</button>
-
-<div class="clear"></div>
-
-<div class="row">
-  <% @place.comments.each do |comment| %>
-    <div class="col-12 col-sm-6">
-      <blockquote>
-        <% if comment.humanized_rating.present? %>
-          <b><%= comment.humanized_rating %></b> -
-        <% end %>
-          <%= comment.message %>
-          <small><%= comment.user.email %></small>
-      </blockquote>
-    </div>
-  <% end %>
-</div>
-
-
-
-<!-------------- This is where the rating card lives  ---->
-
+<!-- http://www.jquery2dotnet.com/ -->
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-6">
@@ -149,7 +11,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6 text-center">
                         <h1 class="rating-num">
-                            <%= @place.comments.average_rating %></h1>
+                            4</h1>
                         <div class="rating">
                             <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star">
                             </span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star">
@@ -228,9 +90,4 @@
             </div>
         </div>
     </div>
-</div>
-
-<!-------- end of rating card ----->
-
-
 </div>

@@ -5,11 +5,11 @@ class Comment < ApplicationRecord
   after_create :send_comment_email
 
   RATINGS = {
-    'one star': '1_star',
-    'two stars': '2_stars',
-    'three stars': '3_stars',
-    'four stars': '4_stars',
-    'five stars': '5_stars',
+    '1 star': 1,
+    '2 stars': 2,
+    '3 stars': 3,
+    '4 stars': 4,
+    '5 stars': 5,
   }
 
   def humanized_rating
@@ -18,5 +18,9 @@ class Comment < ApplicationRecord
 
   def send_comment_email
       NotificationMailer.comment_added(self).deliver_now
+  end
+
+  def average_rating
+    self.sum/self.length
   end
 end

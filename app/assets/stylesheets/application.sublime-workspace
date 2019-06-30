@@ -1,0 +1,456 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-left\tproperty"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"margin-",
+				"margin-bottom\tproperty"
+			],
+			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"im",
+				"image_row"
+			],
+			[
+				"pixel",
+				"pixel_index"
+			],
+			[
+				"ind",
+				"ind_pixel"
+			],
+			[
+				"ro",
+				"row_pixel"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"co",
+				"column"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"output",
+				"output_card"
+			],
+			[
+				"shuffle",
+				"shuffle_deck"
+			],
+			[
+				"com",
+				"comment"
+			],
+			[
+				"bt",
+				"btn-primary"
+			],
+			[
+				"place",
+				"place"
+			],
+			[
+				"params",
+				"params"
+			],
+			[
+				"align",
+				"align-content\tproperty"
+			],
+			[
+				"lin",
+				"letter-spacing\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"font-",
+				"font-weight\tproperty"
+			],
+			[
+				"link_",
+				"link_to"
+			],
+			[
+				"border-col",
+				"border-color\tproperty"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/assets/stylesheets/application.scss",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/Gemfile",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/assets/javascripts/application.js",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/assets/fonts/trashhand-webfont.woff",
+		"/Users/alexandragergar/Desktop/coding-environment/src/coding-challenges/image_blur_2.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/cw32.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/cw31.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/cw6.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/cw26.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/cw25.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/cw_4.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/coding-challenges/test.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/coding-challenges/Image_Blur_1_redo.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/places/index.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/db/schema.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/layouts/application.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/users/show.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/assets/stylesheets/master.scss",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/routes.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/mailers/notification_mailer.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/environments/production.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/environments/development.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/models/comment.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/notification_mailer/comment_added.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/notification_mailer/comment_added.text.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/test/mailers/previews/notification_mailer_preview.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/application.yml",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/mailers/application_mailer.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/image_blur_1.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/ib1extras.rb",
+		"/Users/alexandragergar/Library/Application Support/Sublime Text 3/Packages/BracketHighlighter/Example.sublime-keymap",
+		"/Users/alexandragergar/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/alexandragergar/Desktop/coding-environment/src/other-learning/arraylearning",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/initializers/simple_form_bootstrap.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/initializers/carrierwave.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/controllers/photos_controller.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/controllers/places_controller.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/uploaders/picture_uploader.rb",
+		"/Users/alexandragergar/Downloads/credentials.csv",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/controllers/comments_controller.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/models/place.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/models/photo.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/lib/templates/erb/scaffold/_form.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/application.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/places/show.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/locales/simple_form.en.yml",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config.ru",
+		"/Users/alexandragergar/Desktop/coding-environment/src/card2.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/card.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/models/user.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/db/migrate/20190614182654_create_comments.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/config/initializers/geocoder.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/db/migrate/20190613164935_alter_places_add_lat_and_lng.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/places/new.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/devise/passwords/new.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/devise/registrations/new.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/devise/passwords/edit.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/devise/shared/_links.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/views/devise/sessions/new.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/db/migrate/20190608201114_alter_places_add_user_id_column.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/controllers/application_controller.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/db/migrate/20190608173044_delete_users.rb",
+		"/Users/alexandragergar/Desktop/noms back ups/app/controllers/places_controller.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/helpers/application_helper.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster-dc/app/assets/stylesheets/fonts.scss",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/app/controllers/places_controller.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/Gemfile",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/app/assets/stylesheets/fonts.scss",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/config/application.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/app/views/places/index.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/app/assets/javascripts/application.js",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/config/database.yml",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/config/routes.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/nomster/db/migrate/20190605195607_create_places.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/views/layouts/application.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/assets/stylesheets/master.scss",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/views/quotes/about.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/views/quotes/index.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/assets/stylesheets/footer.scss",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/controllers/quotes_controller.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/config/routes.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/models/quote.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/views/quotes/new.html.erb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/Gemfile",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/assets/stylesheets/fonts.scss",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/config/application.rb",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/app/assets/javascripts/application.js",
+		"/Users/alexandragergar/Desktop/coding-environment/src/splurty/db/migrate/20190527181242_create_quotes.rb",
+		"/Users/alexandragergar/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/alexandragergar/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/alexandragergar/Desktop/GW Portfolio/style2.css",
+		"/Users/alexandragergar/Desktop/GW Portfolio/Index.html"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "application.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"appli",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"font",
+				"app/assets/fonts/trashhand-webfont.woff"
+			],
+			[
+				"master",
+				"app/assets/stylesheets/master.scss"
+			],
+			[
+				"index",
+				"app/views/places/index.html.erb"
+			],
+			[
+				"db/s",
+				"db/schema.rb"
+			],
+			[
+				"scss",
+				"app/assets/stylesheets/application.scss"
+			],
+			[
+				"carr",
+				"config/initializers/carrierwave.rb"
+			],
+			[
+				"application.yml",
+				"config/application.yml"
+			],
+			[
+				"_fo",
+				"lib/templates/erb/scaffold/_form.html.erb"
+			],
+			[
+				"a",
+				"config/application.rb"
+			],
+			[
+				"simple",
+				"config/initializers/simple_form_bootstrap.rb"
+			],
+			[
+				"show",
+				"app/views/places/show.html.erb"
+			],
+			[
+				"comment",
+				"app/models/comment.rb"
+			],
+			[
+				"mas",
+				"app/assets/stylesheets/master.scss"
+			],
+			[
+				"photo",
+				"app/controllers/photos_controller.rb"
+			],
+			[
+				"sho",
+				"app/views/places/show.html.erb"
+			],
+			[
+				"",
+				"config.ru"
+			],
+			[
+				"place",
+				"app/models/place.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

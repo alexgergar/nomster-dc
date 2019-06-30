@@ -12,8 +12,6 @@ body {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
-
 .navbar  {
   background-color: #778C88;
   box-shadow: 0px 1px 3px #2a2a2a; 
@@ -23,9 +21,43 @@ body {
 .navbar-light .navbar-brand {
     color: #0D0D0D;
     font-family: 'trashhandregular', sans-serif;
-    font-size: 26px;
-    
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto
   }
+
+.navbar-nav {
+  color: #0D0D0D;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav-item {
+  color: #0D0D0D;
+  padding-left: 10px;
+}
+
+.nav navbar-nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
+.dropdown-menu.show {
+  text-align: right;
+  padding-right: 10px;
+  background-color: #778C88;
+  z-index: 15;
+}
+
+ul.nav li a, ul.nav li a:visited ul.nav li a:hover, ul.nav li a:active ul.nav li.active a {
+  color: #0D0D0D;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -89,11 +121,6 @@ body {
   width: 100%;
 }
 
-
-
-
-
-
 #map {
   height: 300px;
 }
@@ -123,4 +150,3 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
-

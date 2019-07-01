@@ -18,14 +18,16 @@ body {
   margin-bottom: 0;
 }
 
-.navbar-light .navbar-brand {
+.navbar-nav {
+  flex-direction: row;
+  margin-left: 10px;
+
+}
+
+.navbar-brand {
     color: #0D0D0D;
     font-family: 'trashhandregular', sans-serif;
     font-size: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto
   }
 
 .nav navbar-nav ul, .nav-link a, a.nav-link {
@@ -34,20 +36,19 @@ body {
 
 .nav-item, .nav-item li {
   color: #0D0D0D;
-  padding-left: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+a, a:hover, a:active {
+  color: #0D0D0D;
+
 }
 
-.dropdown-menu.show {
-  text-align: right;
-  padding-right: 10px;
-  background-color: #778C88;
-  z-index: 15;
-}
-
-ul.nav li a, ul.nav li a:visited ul.nav li a:hover, ul.nav li a:active ul.nav li.active a {
+a ul.nav li a, ul.nav li a:visited ul.nav li a:hover, ul.nav li a:active ul.nav li.active a {
   color: #0D0D0D;
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
+  background-color: #778C88;
 }
 
 
@@ -65,6 +66,16 @@ ul.nav li a, ul.nav li a:visited ul.nav li a:hover, ul.nav li a:active ul.nav li
 
 .pagy-style .pagination {
   margin: auto;
+}
+
+a.page-link {
+  color: #0D0D0D;
+}
+
+.page-item.active .page-link {
+  background-color: #334017;
+  border-color: #334017;
+  color: white;
 }
 
 .form_inputs {
@@ -112,10 +123,6 @@ ul.nav li a, ul.nav li a:visited ul.nav li a:hover, ul.nav li a:active ul.nav li
   
 }
 
-a {
-  color: #0D0D0D;
-}
-
 #map {
   height: 300px;
 }
@@ -145,7 +152,6 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
-
 
 
 .progress {

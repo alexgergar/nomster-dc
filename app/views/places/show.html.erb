@@ -4,32 +4,7 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
-<!-- Map Function -->
-  <% if @place.latitude.present? && @place.longitude.present? %>
-    <script>
 
-      function initMap() {
-        var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Hello World!'
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABtClcCssJptUprlpkaG44X-BwENKR_a0&callback=initMap">
-    </script>
-
-     <div id="map"></div>
-<% end %>
-<br />
 <!-- Edit/Remove -->
       <div class="text-right">  
         <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#photoModal">Add a Photo</button>
@@ -126,8 +101,9 @@
 
   <div class="container">
     <div class="row">
-      <% @place.comments.each do |comment| %>
-        <div class="col-6">
+      <div class="col-6">
+        <% @place.comments.each do |comment| %>
+        
           <blockquote>
             <% if comment.humanized_rating.present? %>
               <b><%= comment.humanized_rating %></b> -
@@ -135,19 +111,20 @@
               <%= comment.message %>
               <small><%= comment.user.email %></small>
           </blockquote>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
+
 
     <!-------------- This is where the rating card lives  ---->
       <div class="col-6">  
-        <div class="row justify-content-center">  
-          <div class="card-group col-7">    
+          <br/>
+          <div class="card-group col-10 offset-md-1">    
             <div class="card text-center">
               <div class="card-body ">
 
                 <br/>
 
-                <h2 class="card-title">Average Rating</h2>
+                <h2 class="card-title"><%= @place.comments.average("rating") %></h2>
                   <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>
                   <p class="card-text">
                     <i class="fa fa-user" aria-hidden="true"></i> <%= @place.comments.count %> of reviews
@@ -156,8 +133,8 @@
          <!----- progress part part of the card ---->
                 
                 <div class="progress">
-                  <div class="progress-bar-rating" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 5</div>
-                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-rating" role="progressbar" style="width: 11%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 5</div>
+                  <div class="progress-bar" role="progressbar" style="width: <%= @place.comments.where(rating: 5).count %>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
                 <div class="progress">
@@ -174,16 +151,47 @@
                 </div>
                 <div class="progress">
                   <div class="progress-bar-rating" role="progressbar" style="width: 11%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 1</div>
-                   <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                   <div class="progress-bar" role="progressbar" style="width: <% @place.comments.where(rating: '1_stars').count %>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
     </div>
   </div>
+
+  <br/>
+
+<!-- Map Function -->
+  <% if @place.latitude.present? && @place.longitude.present? %>
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABtClcCssJptUprlpkaG44X-BwENKR_a0&callback=initMap">
+    </script>
+
+     <div id="map"></div>
+<% end %>
+
+
+
 
 </div>
 

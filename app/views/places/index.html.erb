@@ -63,7 +63,7 @@
 
       <div class="row justify-content-center">
         <% if place.photos.present? %>
-          <%= image_tag place.photos.last.picture.url.to_s %>
+          <%= image_tag place.photos.last.picture.url.to_s, class: "img-fluid mx-auto d-block", alt: "Responsive image"%>
         </div>
       <div class="row justify-content-center">
         <%= place.photos.last.caption %>

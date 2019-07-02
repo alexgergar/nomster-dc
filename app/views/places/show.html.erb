@@ -129,14 +129,14 @@
 
                 <br/>
 
-                <h2 class="card-title"><%= @place.comments.average("rating") %></h2>
-                      <% if @place.comments.average("rating") == 5 %>
+                <h2 class="card-title"><%= @place.comments.average(:rating) %></h2>
+                      <% if @place.comments.average(:rating) == 5 %>
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h3>
-                      <% elsif @place.comments.average("rating") == 4 %> 
+                      <% elsif @place.comments.average(:rating) == 4 %> 
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>
-                      <% elsif @place.comments.average("rating") == 3 %> 
+                      <% elsif @place.comments.average(:rating) == 3 %> 
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>
-                      <% elsif @place.comments.average("rating") == 2 %> 
+                      <% elsif @place.comments.average(:rating) == 2 %> 
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>
                       <% else %> 
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>

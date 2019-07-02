@@ -20,9 +20,7 @@ class Comment < ApplicationRecord
       NotificationMailer.comment_added(self).deliver_now
   end
 
-  def average
-    self.sum/self.length
-  end
+  
 end
 
 

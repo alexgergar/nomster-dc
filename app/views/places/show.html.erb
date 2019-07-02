@@ -130,13 +130,13 @@
                 <br/>
 
                 <h2 class="card-title"><%= @place.comments.average(:rating) %></h2>
-                      <% if @place.comments.average(:rating) == 5 %>
+                      <% if @place.comments.average(:rating) >= 4.5 %>
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></h3>
-                      <% elsif @place.comments.average(:rating) == 4 %> 
+                      <% elsif @place.comments.average(:rating) >= 3.8 %> 
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>
-                      <% elsif @place.comments.average(:rating) == 3 %> 
+                      <% elsif @place.comments.average(:rating) >= 2.8 %> 
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>
-                      <% elsif @place.comments.average(:rating) == 2 %> 
+                      <% elsif @place.comments.average(:rating) >= 1.8 %> 
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>
                       <% else %> 
                         <h3><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></h3>
@@ -148,25 +148,25 @@
          <!----- progress part part of the card ---->
                 
                 <div class="progress">
-                  <div class="progress-bar-rating" role="progressbar" style="width: 11%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 5</div>
-                  <div class="progress-bar" role="progressbar" style="width: <%= (@place.comments.where(rating: 5).count/@place.comments.count)*100 %>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-rating" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 5</div>
+                  <div class="progress-bar" role="progressbar" style="width: <%= @place.comments.where(rating: 5.0).count*100/@place.comments.count %>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
                 <div class="progress">
                   <div class="progress-bar-rating" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 4</div>
-                  <div class="progress-bar" role="progressbar" style="width: <%= (@place.comments.where(rating: 4).count/@place.comments.count)*100 %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" style="width: <%= @place.comments.where(rating: 4.0).count*100/@place.comments.count %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="progress">
                   <div class="progress-bar-rating" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 3</div>
-                  <div class="progress-bar" role="progressbar" style="width: <%= (@place.comments.where(rating: 3).count/@place.comments.count)*100 %>%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" style="width:<%= @place.comments.where(rating: 3.0).count*100/@place.comments.count %>%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="progress">
                   <div class="progress-bar-rating" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 2</div>
-                  <div class="progress-bar" role="progressbar" style="width: <%= (@place.comments.where(rating: 2).count/@place.comments.count)*100 %>%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" style="width: <%= @place.comments.where(rating: 2.0).count*100/@place.comments.count %>%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="progress">
                   <div class="progress-bar-rating" role="progressbar" style="width: 11%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i class="fa fa-star" aria-hidden="true"></i> 1</div>
-                   <div class="progress-bar" role="progressbar" style="width: <%= (@place.comments.where(rating: 1).count/@place.comments.count)*100 %>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                   <div class="progress-bar" role="progressbar" style="width: <%= @place.comments.where(rating: 1.0).count*100/@place.comments.count %>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 
               </div>

@@ -10,9 +10,7 @@ class Place < ApplicationRecord
 
   def average
     @comments = self.comments
-    byebug
     @comments.sum/@comments.length
   end
-
 
 end

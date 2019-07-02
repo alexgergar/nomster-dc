@@ -52,21 +52,19 @@
 
 <!-- list of photos and captins-->
 <br/>
-<div class="row justify-content-center">
-  <% @place.photos.each do |photo| %>
-    <div class="col-12 col-sm-4">
-      <div class="row justify-content-center w-100">
-            <%= image_tag photo.picture.url.to_s %>
-      </div><br/>
-      <div class="row justify-content-center">
-            <%= photo.caption %><br/>
-      </div>
-      <div class="row justify-content-center">
-            <small><%= photo.user.email %></small>
-      </div>
+
+    <div class="row">
+        <% @place.photos.each do |photo| %>
+          <div class="col-12 col-sm-4 justify-content-center">
+              <%= image_tag photo.picture.url.to_s, class: "img-fluid mx-auto d-block", alt: "Responsive image" %><br/>
+          <p class="text-center"><%= photo.caption %></p><br/>
+          <p class="text-center"><small><%= photo.user.email %></small></p>
+          
+          </div>
+        <% end %>
     </div>
-  <% end %>
-</div>
+  
+
 <br/>
 
 <!-- Comment Section -->
@@ -104,9 +102,9 @@
 
 <div class="clear"></div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
+  
+    <div class="row  justify-content-center">
+      <div class="col-5 offset-1">
         <% @place.comments.each do |comment| %>
         
           <blockquote>
@@ -176,7 +174,7 @@
             </div>
           </div>
         
-      </div>
+     
     </div>
   </div>
 

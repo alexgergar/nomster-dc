@@ -20,6 +20,7 @@
 <h1 class="text-center">My Comments</h1>
 <br /><br />
 <div class="row">
+
   <% @user.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
       <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
@@ -32,6 +33,7 @@
       </blockquote>
     </div>
   <% end %>
+
 </div>
 
 <!-- Places Section -->
@@ -40,7 +42,7 @@
 <br /><br />
 <h1 class="text-center">My Places</h1>
 <br /><br />
-  <!-- Place section--> 
+  <!-- Place section-->
   <% @user.places.each do |place| %>
    <div class="booyah-box col-10 offset-1">
       <h1><%= link_to place.name, place_path(place) %></h1>
@@ -51,7 +53,7 @@
         <small><%=place.user.email %></small>
       <% end %>
 
-      <!-- Comment Section-->  
+      <!-- Comment Section-->
       <% if place.comments.present? %>
         <div class="col-12">
           <blockquote>
@@ -66,4 +68,3 @@
     </div>
   <% end %>
 </div>
-

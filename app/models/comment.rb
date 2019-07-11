@@ -20,7 +20,5 @@ class Comment < ApplicationRecord
       NotificationMailer.comment_added(self).deliver_now
   end
 
-  
+
 end
-
-

@@ -8,7 +8,7 @@ class Place < ApplicationRecord
   validates :address, presence: true
   validates :description, presence: true
 
-  def average
+  def average2
     @comments = self.comments
     @comments.sum/@comments.length
   end

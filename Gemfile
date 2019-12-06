@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem "puma", ">= 3.12.2"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -71,12 +71,15 @@ source 'https://rails-assets.org' do
 end
 
 gem 'pagy'
-gem 'simple_form'
+gem "simple_form", ">= 5.0.0"
 gem "font-awesome-rails"
-gem 'devise'
+gem "devise", ">= 4.7.1"
 gem "geocoder"
 gem "figaro"
 gem 'carrierwave', '~> 1.0'
-gem "mini_magick"
+gem "mini_magick", ">= 4.9.4"
 gem "fog-aws"
 gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem "rubyzip", ">= 1.3.0"
+gem "loofah", ">= 2.3.1"
+gem "nokogiri", ">= 1.10.4"

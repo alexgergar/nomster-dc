@@ -76,7 +76,7 @@ gem "font-awesome-rails"
 gem "devise", ">= 4.7.1"
 gem "geocoder"
 gem "figaro"
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem "mini_magick", ">= 4.9.4"
 gem "fog-aws"
 gem 'sprockets-rails', :require => 'sprockets/railtie'
